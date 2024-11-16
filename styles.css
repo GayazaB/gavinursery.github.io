@@ -72,30 +72,33 @@ header {
   border-radius: 0 0 10px 10px;
 }
 
-header .logo img {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
+header h1 {
+  font-size: 24px; /* Reduced font size */
+  margin-bottom: 10px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header nav ul {
   list-style: none;
-  margin: 0;
+margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
-  font-size: 18px;
 }
 
-header nav ul li {
+header nav li {
   margin-right: 20px;
 }
 
 header nav a {
   color: #fff;
   text-decoration: none;
-  font-size: 18px;
 }
+
 
 
 h2 {
@@ -270,3 +273,38 @@ footer {
     height: 100px;
   }
 }
+
+@media (max-width: 768px) {
+  header {
+    padding: 0.5em;
+  }
+  
+  header h1 {
+    font-size: 18px;
+  }
+  
+  header nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  header nav ul {
+    flex-direction: column;
+  }
+  
+  header nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  }
+
+@media (max-width: 480px) {
+  header {
+    padding: 0.2em;
+  }
+  
+  header h1 {
+    font-size: 14px;
+  }
+}
+
